@@ -16,17 +16,15 @@
 
                 var themes = {
                     gold: 'ribbon_gold',
-                    pink: 'ribbon_pink'
+                    pink: 'ribbon_pink',
+                    red: 'ribbon_red',
+                    green: 'ribbon_green',
+                    blue: 'ribbon_blue'
                 };
 
                 var positions = {
                     left: 'ribbon_left',
                     right: 'ribbon_right'
-                };
-
-                var types = {
-                    birthday: 'birthday',
-                    event: 'special-event'
                 };
 
                 var ribbonScope = $rootScope.$new();
@@ -50,12 +48,6 @@
                     var position = providedPosition || options.position;
                     return positions[position] || positions.left;
                 };
-
-                var setType = function(providedType) {
-                    var type = (providedType || options.type);
-                    return types[type] || types.birthday;
-                };
-
 
                 var ribbonObject = {
 
@@ -92,14 +84,11 @@
                         if (typeof userOpt === 'object') {
                             userOpts = {
                                 theme: userOpt.theme || undefined,
-                                position: userOpt.position || undefined,
-                                type: userOpt.type || undefined
+                                position: userOpt.position || undefined
                             };
-                        } else {
-                            userOpts.type = userOpt;
                         }
 
-                        var ribbonClass = setTheme(userOpts.theme) + ' ' + setPosition(userOpts.position) + ' ' + setType(userOpts.type);
+                        var ribbonClass = setTheme(userOpts.theme) + ' ' + setPosition(userOpts.position);
 
                         ribbonScope.daysRemaining = {
                             ribbonLink: link,
@@ -113,13 +102,6 @@
                             return;
                         }
                         themes[themeName] = themeClass;
-                    },
-
-                    addType: function(typeName, typeClass) {
-                        if (!typeName || !typeClass) {
-                            return;
-                        }
-                        types[typeName] = typeClass;
                     }
                 };
                 return ribbonObject;
