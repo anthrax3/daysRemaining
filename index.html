@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="showcase">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>daysRemaining</title>
+  <link href="showcase.css" media="all" rel="stylesheet" type="text/css">
+  <link href="daysRemaining.css" media="all" rel="stylesheet" type="text/css">
+</head>
+
+<body ng-controller="MainCtrl">
+  <header>
+    <h1>daysRemaining</h1>
+    <h2>Angular module that displays days remaining before an event.</h2>
+  </header>
+  <div class="main">
+    <ul>
+      <li>
+        <label for="theme">theme:</label>
+        <select ng-model="theme" id="theme" ng-options="value for value in themeOptions" ng-change="setDefaultTheme()"></select>
+      </li>
+      <li>
+        <label for="position">position:</label>
+        <select ng-model="position" id="position" ng-options="value for value in positionOptions" ng-change="setDefaultPosition()"></select>
+      </li>
+    </ul>
+    <br>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+  <script src="daysRemaining.js"></script>
+  <script src="showcase.js"></script>
+</body>
+</html>
