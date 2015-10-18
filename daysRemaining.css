@@ -98,6 +98,69 @@
   color: #F1EFEF;
 }
 
+.ribbon-container > .ribbon.ribbon_red {
+  background-color: #B45757;
+  border-top: 2px solid #711818;
+  border-bottom: 2px solid #711818;
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_red::after {
+  background-color: #B45757;
+  border-color: #711818;
+}
+
+.ribbon-container > .ribbon.ribbon_red::before {
+  background-color: #B45757;
+  border-color: #711818;
+}
+
+.ribbon-container > .ribbon.ribbon_red > a {
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_green {
+  background-color: #9CC99F;
+  border-top: 2px solid #448F49;
+  border-bottom: 2px solid #448F49;
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_green::after {
+  background-color: #9CC99F;
+  border-color: #448F49;
+}
+
+.ribbon-container > .ribbon.ribbon_green::before {
+  background-color: #9CC99F;
+  border-color: #448F49;
+}
+
+.ribbon-container > .ribbon.ribbon_green > a {
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_blue {
+  background-color: #78989A;
+  border-top: 2px solid #356B6D;
+  border-bottom: 2px solid #356B6D;
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_blue::after {
+  background-color: #78989A;
+  border-color: #356B6D;
+}
+
+.ribbon-container > .ribbon.ribbon_blue::before {
+  background-color: #78989A;
+  border-color: #356B6D;
+}
+
+.ribbon-container > .ribbon.ribbon_blue > a {
+  color: #F1EFEF;
+}
+
 .ribbon-container > .ribbon.ribbon_left {
 left: -13px;
 right: auto;
