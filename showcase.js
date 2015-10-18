@@ -5,7 +5,7 @@ app.controller('MainCtrl', ['$scope', 'daysRemaining',
     'use strict';
 
     $scope.theme = 'gold';
-    $scope.themeOptions = ['gold', 'pink'];
+    $scope.themeOptions = ['gold', 'pink', 'red', 'green', 'blue'];
 
     $scope.position = 'left';
     $scope.positionOptions = ['left', 'right'];
