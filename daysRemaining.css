@@ -1,1 +1,180 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 
+.ribbon-container {
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.ribbon-container > .ribbon {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: #DAA520;
+  color: #F1EFEF;
+  width: 150px;
+  line-height: 18px;
+  position: absolute;
+  height: 15px;
+  top: 48px;
+  border-top: 2px solid #855F00;
+  border-bottom: 2px solid #855F00;
+  padding: 10px 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.ribbon-container > .ribbon::before {
+  background-color: #DAA520;
+  content: "";
+  top: -2px;
+  left: -18px;
+  width: 35px;
+  height: 100%;
+  position: absolute;
+  border-color: #855F00;
+  border-style: solid;
+  border-width: 2px 0 2px 2px;
+  -moz-transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  -webkit-transform: skewX(-45deg);
+  transform: skewX(-45deg);
+}
+
+.ribbon-container > .ribbon::after {
+  background-color: #DAA520;
+  content: "";
+  top: -2px;
+  right: -18px;
+  width: 35px;
+  height: 100%;
+  position: absolute;
+  border-color: #855F00;
+  border-style: solid;
+  border-width: 2px 2px 2px 0;
+  -moz-transform: skewX(45deg);
+  -ms-transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  transform: skewX(45deg);
+}
+
+.ribbon-container > .ribbon.ribbon_gold {
+  background-color: #DAA520;
+  border-top: 2px solid #855F00;
+  border-bottom: 2px solid #855F00;
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_gold::after {
+  background-color: #DAA520;
+  border-color: #855F00;
+}
+
+.ribbon-container > .ribbon.ribbon_gold::before {
+  background-color: #DAA520;
+  border-color: #855F00;
+}
+
+.ribbon-container > .ribbon.ribbon_gold > a {
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_pink {
+  background-color: #FFC7C6;
+  border-top: 2px solid #B55957;
+  border-bottom: 2px solid #B55957;
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_pink::after {
+  background-color: #FFC7C6;
+  border-color: #B55957;
+}
+
+.ribbon-container > .ribbon.ribbon_pink::before {
+  background-color: #FFC7C6;
+  border-color: #B55957;
+}
+
+.ribbon-container > .ribbon.ribbon_pink > a {
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_red {
+  background-color: #B45757;
+  border-top: 2px solid #711818;
+  border-bottom: 2px solid #711818;
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_red::after {
+  background-color: #B45757;
+  border-color: #711818;
+}
+
+.ribbon-container > .ribbon.ribbon_red::before {
+  background-color: #B45757;
+  border-color: #711818;
+}
+
+.ribbon-container > .ribbon.ribbon_red > a {
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_green {
+  background-color: #9CC99F;
+  border-top: 2px solid #448F49;
+  border-bottom: 2px solid #448F49;
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_green::after {
+  background-color: #9CC99F;
+  border-color: #448F49;
+}
+
+.ribbon-container > .ribbon.ribbon_green::before {
+  background-color: #9CC99F;
+  border-color: #448F49;
+}
+
+.ribbon-container > .ribbon.ribbon_green > a {
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_blue {
+  background-color: #78989A;
+  border-top: 2px solid #356B6D;
+  border-bottom: 2px solid #356B6D;
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_blue::after {
+  background-color: #78989A;
+  border-color: #356B6D;
+}
+
+.ribbon-container > .ribbon.ribbon_blue::before {
+  background-color: #78989A;
+  border-color: #356B6D;
+}
+
+.ribbon-container > .ribbon.ribbon_blue > a {
+  color: #F1EFEF;
+}
+
+.ribbon-container > .ribbon.ribbon_left {
+left: -13px;
+right: auto;
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.ribbon-container > .ribbon.ribbon_right {
+right: -13px;
+left: auto;
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
